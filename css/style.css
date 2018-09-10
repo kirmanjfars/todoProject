@@ -107,7 +107,11 @@ body{
     /* Styles */
 
     .colc4{
-        width: 90%;
+        width: 80%;
+    }
+
+    .colc4 input, .todo h2 , .todo p, .doned p  , .doned i  , .todoItem i, .doneItem i , .done h2{
+        font-size: 42px;
     }
 
     }
