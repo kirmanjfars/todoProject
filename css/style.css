@@ -140,4 +140,12 @@ h1{
      font-size: 72px   
      }
 
+    .doneItem i{
+        color: rgba(206, 23, 23, 0.986);
+    }
+
+    .todoItem i:first-child{
+        color: rgb(21, 173, 21);
+    }
+
     }
