@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="colc4"> 
+        <input class="newTodo" type="text" placeholder="Enter New Todo">
+    </div>
+
+    <div class="todo colc4">
+          <h2>ToDo</h2>
+    </div>
+
+    <div class="done colc4">
+            <h2>Done</h2>
+    </div>
+
+    <div class="doned colc4">
+           
+    </div>
+    
+   
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+
+        let id = 0; 
+      $(".colc4 input").keypress(function(e){
+        let todo = $(".newTodo").val();
+            if(e.keyCode==13){
+               
+                $('.todo').append(
+                    `<div class="todoItem">  <i class="fas goDone fa-check-circle"></i> <p> ${todo} </p> <i class="fas fav fa-star"></i></div> `
+                );
+                $(".newTodo").val("");
+            }
+      })
+
+      $(".todo").on('click','.goDone' ,function(){
+          
+          let me = $(this).closest("div");
+          let myp = me.find('p').text();
+          
+         me.css('display', 'none')
+          $('.doned').append(
+                    `<div class="doneItem">  <i class="fas goUnDone fa-times-circle"></i> <p> ${myp} </p></div>`
+            );
+        })
+
+        $(".doned").on('click','.goUnDone' ,function(){
+          
+          let me = $(this).closest("div");
+          let myp = me.find('p').text();
+          
+          me.css('display', 'none')
+          $('.todo').append(
+            `<div class="todoItem">  <i class="fas goDone fa-check-circle"></i> <p> ${myp} </p> <i class="fas fav fa-star"> </div>`
+            );
+        })
+
+         $(".todo").on('click','.fav' ,function(){
+          
+          let me = $(this).closest(".fav");          
+         me.css('color', 'yellow')
+         
+        })
+
+
+    </script>
+</body>
+</html>
+

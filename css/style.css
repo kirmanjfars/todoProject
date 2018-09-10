@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url(../images/maxresdefault.jpg)
+}
+
+
+.colc4{
+    width: 60%;
+    margin: 0% auto
+}
+
+
+ .colc4 input{
+    margin-top: 50px;
+    border: 1px solid gray; 
+    border-radius: 3px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.todo h2{
+    color: white;
+    margin-top: 40px;
+    background-color: rgba(128, 128, 128, 0.521);
+    letter-spacing: 3px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.done {
+    color: white;
+    margin-top: 40px;
+    background-color: rgba(211, 206, 206, 0.527);
+    letter-spacing: 3px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top:40px;
+}
+
+.todoItem{
+    width: 100%;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.521);
+    border: 1px solid white;
+    padding: 5px 20px;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+.todo p, .doned p{
+    font-size: 22px;
+    text-transform: capitalize;
+    width: 90%;
+}
+
+.todoItem i, .doneItem i{
+    margin-right: 15px;
+    font-size: 22px;
+    border: none;
+    background-color: none;
+}
+.todoItem i:first-child:hover{
+    color: rgb(21, 173, 21);
+}
+
+.fa-check-circle:hover{
+    color: white;
+}
+
+
+
+
+.doneItem i, .doneItem i{
+    margin-right: 15px;
+    font-size: 22px;
+    border: none;
+    background-color: none;
+}
+.doneItem i:hover{
+    color: rgba(206, 23, 23, 0.986);
+}
+
+
+
+.doneItem{
+    width: 100%;
+    color: white;
+    background-color: rgba(211, 206, 206, 0.527);
+    border: 1px solid white;
+    padding: 5px 20px;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+
+    .colc4{
+        width: 100%;
+    }
+
+    }
