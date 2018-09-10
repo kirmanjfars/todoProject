@@ -136,8 +136,12 @@ h1{
 
     .todoItem i:first-child, .doneItem i:first-child{
     margin-right: 40px;}
+    
     h1{
-     font-size: 72px   
+        color: white;
+        text-align: center;
+        margin-top: 72px;
+        font-family: 'Baloo Tammudu', cursive;
      }
 
     .doneItem i{
