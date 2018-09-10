@@ -2,12 +2,20 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
+
 
 body{
     background-image: url(../images/maxresdefault.jpg)
 }
 
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Baloo Tammudu', cursive;
+}
 
 .colc4{
     width: 60%;
@@ -110,8 +118,26 @@ body{
         width: 80%;
     }
 
-    .colc4 input, .todo h2 , .todo p, .doned p  , .doned i  , .todoItem i, .doneItem i , .done h2{
-        font-size: 42px;
+    .colc4 input, .todo h2 ,  .done h2{
+        font-size: 72px;
     }
+
+    .todo p, .doned p  , .doned i  , .todoItem i, .doneItem i {
+        font-size: 58px;
+    }
+
+    .doneItem, .todoItem{
+        margin-bottom: 10px;
+    }
+
+    .done, .todo{
+        margin-top: 100px;
+    }
+
+    .todoItem i:first-child, .doneItem i:first-child{
+    margin-right: 40px;}
+    h1{
+     font-size: 72px   
+     }
 
     }
